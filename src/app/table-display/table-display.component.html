@@ -1,0 +1,35 @@
+<p>table-display works!</p>
+<div class="animated fadeIn">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-align-justify"></i> Simple Table
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Username</th>
+                  <th>Date registered</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let product of products">
+                  <td>{{product.username}}</td>
+                  <td>{{product.Dateregistered}}</td>
+                  <td>{{product.Role}}</td>
+                  <td>
+                    <span class="badge badge-success">{{product.status}}</span>
+                  </td>
+                </tr>
+                
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
